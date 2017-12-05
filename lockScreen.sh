@@ -11,5 +11,9 @@ rm blurred.png lockScreen.jpg
 rm /tmp/lockScreen.png
 cp final.png /tmp/lockScreen.png
 rm final.png
+
+# Change Keyboard Layout To English
+xdotool key alt+shift
+
 # Run i3lock
 i3lock -i /tmp/lockScreen.png -d -I 30
