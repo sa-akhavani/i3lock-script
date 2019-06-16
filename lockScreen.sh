@@ -1,10 +1,13 @@
 #!/bin/bash
-# Take Screenshot
+
+# Take a Screenshot
 scrot -b 'lockScreen.jpg'
-# convert to png and blur
+
+# Converts screenshot to png and blurs it
 convert lockScreen.jpg -blur 15x5 blurred.png
-# put on-image on blurred.png
-composite -gravity center /home/ali/src/i3lock-script/on-image.png blurred.png final.png
+
+# Put on-image.png on blurred.png
+composite -gravity center ./on-image.png blurred.png final.png
 
 # Remove tmp files and add final image to tmp
 rm blurred.png lockScreen.jpg
