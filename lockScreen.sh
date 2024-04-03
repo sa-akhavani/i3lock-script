@@ -4,7 +4,7 @@
 scrot -b 'lockScreen.jpg'
 
 # Converts screenshot to png and blurs it
-convert lockScreen.jpg -blur 15x5 blurred.png
+convert lockScreen.jpg -blur 20x10 blurred.png
 
 # Put on-image.png on blurred.png
 composite -gravity center ./on-image.png blurred.png final.png
